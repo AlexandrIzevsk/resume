@@ -1,47 +1,114 @@
-.navigation{
-    float: right;
-    height: 100%;
+@font-face {
+    src: url('fonts/Roboto_Condensed-Regular.ttf');
+    font-family: "Roboto Regular";
+}
+* {
+    margin: 0;
+}
+.header {
+    background-color: rgb(0, 61, 58);
+    padding: 16px;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: auto;
 }
 
-.navigation a{
+
+.body {
+    font-family: "Roboto Regular", Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    grid-template-rows: auto;
+    grid-gap: 2vw;
+    background-color: rgb(210, 0, 107);
+
+}
+
+.grid-wrapper {
+    font-family: "Roboto Regular", Helvetica, Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: auto;
+}
+
+.collapsible {
+    background-color: #cfcbcb;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    border-radius: 15px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.collapsible:after {
+    content: "\02795";
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+.content {
+    padding: 0 18px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+.active {
+    background-color: #ccc;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.collapsible:hover {
+    background-color: #ccc;
+}
+
+.active:after {
+    content: "\02796";
+}
+
+
+.item-1 {
+    color: white;
+
+}
+
+.item-2 {
+    color: white;
+
+}
+.item-2 a{
     height: 100%;
     display: table;
     float: left;
     padding: 10px 20px;
-    background-color: #101010;
     text-decoration: none;
 }
 
-.navigation a li{
+.item-2 a li{
     display: table-cell;
     font-size: 20px;
     color: white;
 }
-
-.navigation a:hover{
+.item-2 a:hover{
     background-color: gray;
     color: #101010;
 }
-
-.inner-header{
-    background-color: #101010;
-    vertical-align: middle;
-    padding: 0px 60px;
-}
-
-.logo-container{
-
-    display: inline-block;
+.title {
+    font-family: "Roboto Regular", Helvetica, Arial, sans-serif;
+    text-align: center;
+    background-color: hsl(48, 100%, 50%);
     color: white;
 }
 
-.content{
-    padding: 0px 160px;
-    vertical-align: middle;
+.item-7 {
+    font-family: sans-serif;
+    background-color: hsl(48, 100%, 50%);
 }
-
-.content h1{
-    padding: 10px 160px;
-}
-
-

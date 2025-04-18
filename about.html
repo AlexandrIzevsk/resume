@@ -1,35 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <link rel="stylesheet" href="hf.css">
+    <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         О себе
     </title>
 </head>
 <body>
-    <div class="header">
-            <div class="inner-header">
-                <div class="logo-container">
-                    <h1>Моё хобби</h1>
-                </div>
-                <div class="navigation">
-                    <ul>
-                        <a href="AboutMi.html"><li>Главная</li></a>
-                        <a href="about.html"><li>Обо мне</li></a>
-                        <a href="contacts.html"><li>Обратная связь</li></a>
-                    </ul>
-                </div>
-            </div>
-    </div>
-    <div class="content">
-        <h3>Мое хобби - "оживлять" электронику</h3>
-        <hr>
 
-            <img src="C:\Users\user\Documents\Ediuc_py\E1\pythonProject\photo.jpg" alt="Мое фото" width="260" height="300" alt="" style="float: left; margin: 0 10px 10px 0;">
-            <p>
-                Меня зовут Александр. Мне 37 лет. Я живу в г. Ижевске, переехал сюда недавно и решил сменить род деятельности,
-                заняться разработкой веб-приложений.
-            </p>
 
+<div class="header">
+    <div class="grid-item item-1 logo">
+        <h1>Резюме</h1>
     </div>
+    <div class="grid-item item-2 navigation">
+        <ul>
+            <a href="AboutMi.html"><li>Главная</li></a>
+            <a href="about.html"><li>Обо мне</li></a>
+            <a href="contacts.html"><li>Обратная связь</li></a>
+        </ul>
+    </div>
+</div>
+<div class="title">
+    <h3>Мое хобби - "оживлять" электронику</h3>
+    <hr>
+</div>
+<div class="body">
+    <div class="grid-item item-4 img">
+        <img src="photo.jpg" alt="Мое фото" width="260" height="300" alt="" style="float: left; margin: 0 10px 10px 0;">
+    </div>
+    <div class="grid-item item-5 AboutMi">
+        <p>
+            Меня зовут Александр. Мне 37 лет. Я живу в г. Ижевске, переехал сюда недавно и решил сменить род деятельности,
+            заняться разработкой веб-приложений.
+        </p>
+
+
+        <button type="button" class="collapsible">
+                Навыки
+        </button>
+        <div class="content">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JS</li>
+            <li>Python</li>
+            <li>Ремонт электроники</li>
+        </div>
+<!--        </div>-->
+    </div>
+</div>
+<div class="grid-item item-7 footer">
+    <footer>
+        <h2>Контакты</h2>
+        <p>
+            Телефон:
+            <a href="tel:377377">377377</a>
+        </p>
+        <p>
+            E-mail:
+            <a href="mailto:something.special@amazing-company.com">something.special@amazing-company.com</a>
+        </p>
+    </footer>
+</div>
+<script src="index.js"></script>
+<noscript>Ваш браузер не поддерживает JavaScript!</noscript>
+</body>
+
+</html>
